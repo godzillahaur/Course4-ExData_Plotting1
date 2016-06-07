@@ -42,7 +42,7 @@ with(OriData, plot(DateTime, Voltage, type = "l", xlab = "datetime", ylab = "Vol
 with(OriData, plot(DateTime, Sub_metering_1, type = "l", xlab = "", ylab = "Energy sub metering"))
 with(OriData, lines(DateTime, Sub_metering_2, col = "red"))
 with(OriData, lines(DateTime, Sub_metering_3, col = "blue"))
-legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = 1)        
+legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), col = c("black", "red", "blue"), lty = 1, bty = "n")        
 ##Graphic-4
 with(OriData, plot(DateTime, Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global_reactive_power"))
 
